@@ -19,9 +19,9 @@ export default async function CompanyJobsPage(props:PageProps) {
   return (
     <div>
       <div className="container">
-        <h1 className="text-xl my-6">{org.name} Jobs</h1>
+        {/* <h1 className="text-xl my-6 text-center font-bold">{org.name} Jobs</h1> */}
       </div>
-      <Jobs jobs={jobsDocs} header={"Jobs posted by "+org.name} />
+      <Jobs jobs={jobsDocs} header={org.name+""+"Jobs "} />
     </div>
   );
 }

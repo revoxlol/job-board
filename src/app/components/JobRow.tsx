@@ -1,4 +1,5 @@
 'use client';
+import React from "react";
 import TimeAgo from "@/app/components/TimeAgo";
 import {Job, JobModel} from "@/models/Job";
 import {faHeart} from "@fortawesome/free-solid-svg-icons";
@@ -28,25 +29,30 @@ export default function JobRow({jobDoc}:{jobDoc:Job}) {
                 <Link className="hover:underline" href={'/show/'+jobDoc._id}>{jobDoc.title}</Link>
               </div>
               <div className="text-gray-400 text-sm capitalize">
-                {jobDoc.remote}
-                {' '}&middot;{' '}
-                {jobDoc.city}, {jobDoc.country}
-                {' '}&middot;{' '}
-                {jobDoc.type}-time
-                {jobDoc.isAdmin && (
-                  <>
-                    {' '}&middot;{' '}
-                    <Link href={'/jobs/edit/'+jobDoc._id}>Edit</Link>
-                    {' '}&middot;{' '}
-                    <button
-                      type="button"
-                      onClick={async () => {
-                        await axios.delete('/api/jobs?id='+jobDoc._id);
-                        window.location.reload();
-                      }}>
-                      Delete
-                    </button>
-                  </>
+  {jobDoc.remote}
+  {' '}&middot;{' '}
+  {jobDoc.city}, {jobDoc.country}
+  {' '}&middot;{' '}
+  {jobDoc.type}-time
+  {jobDoc.isAdmin && (
+    <>
+      {' '}&middot;{' '}
+      <Link href={'/jobs/edit/' + jobDoc._id}>
+        <span className="text-green-500 hover:text-green-700">Edit</span>
+      </Link>
+      {' '}&middot;{' '}
+      <button
+        type="button"
+        className="text-red-500 hover:text-red-700"
+        onClick={async () => {
+          await axios.delete('/api/jobs?id=' + jobDoc._id);
+          window.location.reload();
+        }}
+      >
+        Delete
+      </button>
+    </>
+                 
                 )}
               </div>
             </div>

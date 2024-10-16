@@ -1,3 +1,4 @@
+import React from "react";
 import Hero from "@/app/components/Hero";
 import Jobs from "@/app/components/Jobs";
 import {addOrgAndUserData, JobModel} from "@/models/Job";

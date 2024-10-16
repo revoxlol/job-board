@@ -17,7 +17,7 @@ export default async function NewListingPage() {
   if (!user) {
     return (
       <div className="container">
-        <div>You need to be logged in to post a job</div>
+        <div>You need to be registered in to post a job</div>
       </div>
     );
   }

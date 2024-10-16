@@ -13,5 +13,7 @@ export const config = {
     '/jobs/:orgId*',
     '/jobs/edit/:jobId*',
     '/show/:jobId*',
+    '/dashboard',
+    //'/api/auth/redirect', //recently added 
   ]
 };
