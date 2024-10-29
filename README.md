@@ -1,7 +1,7 @@
 # job-board
 
 
-Technologies Used : 
+# Technologies Used : 
 
 
 Next.js
@@ -22,7 +22,7 @@ MongoDB
 
 
 
-Make sure to run "npm install " to : 
+# Make sure to run "npm install " to : 
 
 
 Tailwind css 
@@ -34,7 +34,7 @@ Axios
 
 
 
-Your .env file should have : 
+# Your .env file should have : 
 
 
 WORKOS_API_KEY= Your api key  #in
