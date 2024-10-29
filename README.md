@@ -2,6 +2,8 @@
 
 
 Technologies Used : 
+
+
 Next.js
 
 
