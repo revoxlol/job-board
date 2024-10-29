@@ -18,6 +18,10 @@ AWS
 
 MongoDB
 
+
+
+
+
 Make sure to run "npm install " to : 
 
 
@@ -25,6 +29,9 @@ Tailwind css
 
 
 Axios
+
+
+
 
 
 Your .env file should have : 
