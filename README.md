@@ -2,14 +2,26 @@
 
 
 Technologies Used : 
-Next.js,
-WorkOS,
-Tailwind Css,
-AWS,
+Next.js
+
+
+WorkOS
+
+
+Tailwind Css
+
+
+AWS
+
+
 MongoDB
 
 Make sure to run "npm install " to : 
-Tailwind css & 
+
+
+Tailwind css 
+
+
 Axios
 
 
