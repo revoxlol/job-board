@@ -14,6 +14,8 @@ Axios
 
 
 Your .env file should have : 
+
+
 WORKOS_API_KEY= Your api key  #in
 WORKOS_CLIENT_ID= Your client ID
 WORKOS_REDIRECT_URI="http://localhost:3000/api/auth/callback"    ##this is usuaally constant in all accounts but double check
